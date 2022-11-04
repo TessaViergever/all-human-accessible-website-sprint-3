@@ -10,18 +10,25 @@ color: rgb(49, 39, 113);
 /* HEADER STYLING */
 header {
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 2fr ;
   grid-template-rows: 1fr ;
   grid-template-areas:
-  "logo-buurtcampus-plantswap" 
+  "logo-buurtcampus-plantswap main-navigatie-menu" 
 }
 
 header>img{
   max-width: 100%;
   height: auto;
-  place-self: center;
+  place-self: left;
   padding-left:5rem;
   grid-area: logo-buurtcampus-plantswap;
+}
+
+.header-nav{
+  display: inline;
+  place-self: right;
+  list-style-type: none;
+  grid-area: main-navigatie-menu;
 }
 
 /* MAIN STYLING */
@@ -42,6 +49,8 @@ h1{
   color: rgb(49, 39, 113);
   text-align: center;
  }
+
+ 
 
 
 /* CAROUSEL "TIPS BUURTBEWONERS" STYLING */ 

@@ -1,0 +1,141 @@
+/* BODY STYLING */
+body{
+width: 100%;
+padding:1rem 2rem 0 2rem;
+/*background-color: rgba(35, 178, 47, 0.5);*/
+color: rgb(49, 39, 113);
+}
+
+
+/* HEADER STYLING */
+header {
+  display: grid;
+  grid-template-columns: 2fr ;
+  grid-template-rows: 1fr ;
+  grid-template-areas:
+  "logo-buurtcampus-plantswap main-navigatie-menu" 
+}
+
+header>img{
+  max-width: 100%;
+  height: auto;
+  place-self: left;
+  padding-left:5rem;
+  grid-area: logo-buurtcampus-plantswap;
+}
+
+.header-nav{
+  display: inline;
+  place-self: right;
+  list-style-type: none;
+  grid-area: main-navigatie-menu;
+}
+
+/* MAIN STYLING */
+main {
+background-color: rgba(35, 178, 47, 0.5);
+border:rgba(35, 178, 47, 0.5);
+}
+
+.main-header{
+background-color: rgb(255, 255, 255); 
+background-color: rgba(35, 178, 47, 0.214);
+text-align: center;
+padding: 10px;
+}
+
+
+h1{
+  color: rgb(49, 39, 113);
+  text-align: center;
+ }
+
+
+h2{
+  text-align: center;
+  background-color: rgb(255, 255, 255); 
+  }
+
+  /* PLANTENLIJST A TM Z STYLING */
+
+.plantenlijst-wrapper{
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.plantenlijst-items{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+
+.plantenlijst-item{
+  /* flex: 1 0 21%; 
+  margin-top: 50px;
+  margin-bottom: 100px;
+  height: 100px;*/
+
+  display: inline-block;
+  width: 25%;
+  box-sizing: border-box;
+
+}
+.plantenlijst-items img{
+  max-width: 75%;
+  border-radius: 5%;
+}
+
+@media screen and (min-width: 400px) {
+  .plantenlijst-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    margin-right:6rem;
+    margin-left:6rem;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 625px) {
+  .plantenlijst-item {
+  flex: 1 0 21%; 
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: 100px;
+  background-color: rgb(49, 39, 113, 0.6);/*tijdelijke kleur als voorbeeld*/
+  }
+}
+
+
+
+
+/* "KOM LANGS BIJ OBA" STYLING */ 
+.box-kom-langs-bij-oba {
+  padding: 10px;
+  text-align: center;
+}
+
+.box-kom-langs-bij-oba h2{
+text-decoration: underline;
+}
+
+
+/* FOOTER STYLING*/
+footer img {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+  background-color: rgb(255, 255, 255); 
+}
+
+
+
+
+
+
+
+
