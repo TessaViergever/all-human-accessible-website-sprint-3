@@ -24,12 +24,15 @@ header>img{
   grid-area: logo-buurtcampus-plantswap;
 }
 
+/*
 .header-nav{
   display: inline;
   place-self: right;
   list-style-type: none;
   grid-area: main-navigatie-menu;
+  padding-left: 2rem;
 }
+*/
 
 /* MAIN STYLING */
 main {
@@ -69,18 +72,14 @@ h2{
 .plantenlijst-items{
   display: flex;
   flex-wrap: wrap;
-  row-gap: 50px;
+
 }
 
 .plantenlijst-item{
-  /* flex: 1 0 21%; 
-  margin-top: 50px;
-  margin-bottom: 100px;
-  height: 100px;*/
-
   display: inline-block;
-  width: 25%;
+  max-width: 50%;
   box-sizing: border-box;
+  row-gap: 2px;
 
 }
 .plantenlijst-items img{
@@ -88,27 +87,38 @@ h2{
   border-radius: 5%;
 }
 
-@media screen and (min-width: 400px) {
+
+@media screen and (min-width: 500px) {
   .plantenlijst-item {
-    display: flex;
+   /* display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: top;
     margin-right:6rem;
     margin-left:6rem;
-    max-width: 400px;
+    max-width: 400px;*/
+
+    display: inline-block;
+    max-width: 33%;
+    box-sizing: border-box;
   }
 }
 
-@media screen and (min-width: 625px) {
+
+
+@media screen and (min-width: 750px) {
   .plantenlijst-item {
-  flex: 1 0 21%; 
+    display: inline-block;
+    max-width: 25%;
+    box-sizing: border-box;
+  /*flex: 1 0 21%; 
   margin-top: 50px;
   margin-bottom: 100px;
   width: 100px;
-  background-color: rgb(49, 39, 113, 0.6);/*tijdelijke kleur als voorbeeld*/
+  background-color: rgb(49, 39, 113, 0.6);*/
   }
 }
+
 
 
 
